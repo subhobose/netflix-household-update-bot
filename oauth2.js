@@ -17,7 +17,10 @@ const oAuth2Client = new google.auth.OAuth2(client_id, client_secret, redirect_u
 function getAuthenticatedClient() {
   return new Promise((resolve, reject) => {
     try {
-      const token = JSON.parse(process.env.GOOGLE_TOKEN);
+      retrievedToken = process.env.GOOGLE_TOKEN;
+      formattedToken = retrievedToken.replace(/([{,])\s*([a-zA-Z0-9_]+)\s*:/g, '$1"$2":').replace(/:\s*([a-zA-Z0-9_]+)\s*(?=[,}])/g, ':"$1"');
+      console.log(formattedToken);
+      const token = JSON.parse(formattedToken);
       oAuth2Client.setCredentials(token);
       resolve(oAuth2Client);
     } catch (error) {
