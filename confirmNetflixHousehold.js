@@ -6,7 +6,10 @@ const { timeout } = require('puppeteer');
 
 
 async function confirmNetflixHousehold(confirmationLink, auth) {
-    const browser = await puppeteer.launch({ headless: false }); // Set headless: true for silent execution
+    const browser = await puppeteer.launch({ 
+        executablePath: '/app/.chrome-for-testing/chrome-linux64/chrome', // Path to Chromium on Heroku
+        args: ['--no-sandbox', '--disable-setuid-sandbox', '--js-flags="--max-old-space-size=256"'], // Arguments for Chromium
+        headless: true }); // Set headless: true for silent execution
     const page = await browser.newPage();
     const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
