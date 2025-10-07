@@ -6,3 +6,5 @@ Pre-req:
 2. Follow GMAIL API setup documentation and have the following 2 files ready: credentials.json, token.json(generated when authenticated the first time)
 
 Run using node index.js. Cheers!
+
+Note: Run times can vary
