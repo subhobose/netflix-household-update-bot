@@ -1,1 +1,96 @@
-cmVxdWlyZSgnZG90ZW52JykuY29uZmlnKCk7CmNvbnN0IHB1cHBldGVlciA9IHJlcXVpcmUoJ3B1cHBldGVlcicpOwpjb25zdCB7IGdldE5ldGZsaXhDb2RlIH0gPSByZXF1aXJlKCcuL2dldE5ldGZsaXhDb2RlJyk7Cgpjb25zdCBzbGVlcCA9IChtcykgPT4gbmV3IFByb21pc2UocmVzb2x2ZSA9PiBzZXRUaW1lb3V0KHJlc29sdmUsIG1zKSk7CgovLyBSZXR1cm5zIHRydWUgd2hlbiB0aGUgaG91c2Vob2xkIHVwZGF0ZSB3YXMgY29uZmlybWVkLCBmYWxzZSBvdGhlcndpc2UuCi8vIENhbGxlcnMgbXVzdCBvbmx5IG1hcmsgdGhlIGVtYWlsIGFzIHJlYWQgb24gdHJ1ZSDigJQgdGhlIG9sZCBjb2RlIHN3YWxsb3dlZAovLyBldmVyeSBmYWlsdXJlIGFuZCB0aGUgY2FsbGVyIG1hcmtlZCB0aGUgbWFpbCByZWFkIGFueXdheSwgc28gYSBmYWlsZWQKLy8gYXBwcm92YWwgd2FzIG5ldmVyIHJldHJpZWQuCmFzeW5jIGZ1bmN0aW9uIGNvbmZpcm1OZXRmbGl4SG91c2Vob2xkKGNvbmZpcm1hdGlvbkxpbmssIGF1dGgpIHsKICAgIGNvbnN0IGJyb3dzZXIgPSBhd2FpdCBwdXBwZXRlZXIubGF1bmNoKHsKICAgICAgICAvLyAtLWRpc2FibGUtZGV2LXNobS11c2FnZSBpcyByZXF1aXJlZCBpbiBHaXRIdWIgQWN0aW9uczogdGhlIGRlZmF1bHQKICAgICAgICAvLyAvZGV2L3NobSBpcyB0aW55IHRoZXJlIGFuZCBDaHJvbWUgY3Jhc2hlcyB3aXRob3V0IGl0LgogICAgICAgIGFyZ3M6IFsnLS1uby1zYW5kYm94JywgJy0tZGlzYWJsZS1zZXR1aWQtc2FuZGJveCcsICctLWRpc2FibGUtZGV2LXNobS11c2FnZScsICctLWRpc2FibGUtZ3B1J10sCiAgICAgICAgaGVhZGxlc3M6IHRydWUsCiAgICB9KTsKICAgIGNvbnN0IHBhZ2UgPSBhd2FpdCBicm93c2VyLm5ld1BhZ2UoKTsKCiAgICB0cnkgewogICAgICAgIGNvbnNvbGUubG9nKCdPcGVuaW5nIGNvbmZpcm1hdGlvbiBsaW5rJyk7CiAgICAgICAgYXdhaXQgcGFnZS5nb3RvKGNvbmZpcm1hdGlvbkxpbmssIHsgd2FpdFVudGlsOiAnZG9tY29udGVudGxvYWRlZCcsIHRpbWVvdXQ6IDYwMDAwIH0pOwoKICAgICAgICAvLyBBcmUgd2UgYWxyZWFkeSBvbiB0aGUgaG91c2Vob2xkLWNvbmZpcm0gcGFnZSAoc2lnbmVkLWluIHNlc3Npb24pPwogICAgICAgIC8vIE5PVEU6IHRoZSBvbGQgY29kZSBjaGVja2VkIGBjb25maXJtVXBkYXRlQnRuLmxlbmd0aCA8IDBgLCB3aGljaCBpcwogICAgICAgIC8vIG5ldmVyIHRydWUgZm9yIGFuIGFycmF5LCBzbyB0aGUgc2lnbi1pbiBmbG93IGJlbG93IE5FVkVSIHJhbiBhbmQKICAgICAgICAvLyBldmVyeSBydW4gZGllZCB3YWl0aW5nIDEwMHMgZm9yIGEgYnV0dG9uIG9uIHRoZSBsb2dpbiBwYWdlLgogICAgICAgIGxldCBjb25maXJtQnRuID0gbnVsbDsKICAgICAgICB0cnkgewogICAgICAgICAgICBjb25maXJtQnRuID0gYXdhaXQgcGFnZS53YWl0Rm9yU2VsZWN0b3IoCiAgICAgICAgICAgICAgICAnYnV0dG9uW2RhdGEtdWlhPSJzZXQtcHJpbWFyeS1sb2NhdGlvbi1hY3Rpb24iXScsIHsgdGltZW91dDogMTUwMDAgfSk7CiAgICAgICAgfSBjYXRjaCB7CiAgICAgICAgICAgIGNvbmZpcm1CdG4gPSBudWxsOyAvLyBub3Qgc2lnbmVkIGluIHlldCDigJQgZmFsbCB0aHJvdWdoIHRvIGxvZ2luCiAgICAgICAgfQoKICAgICAgICBpZiAoIWNvbmZpcm1CdG4pIHsKICAgICAgICAgICAgLy8gU3RlcCAxOiBzd2l0Y2ggdGhlIGxvZ2luIGZvcm0gdG8gIlNpZ24gaW4gd2l0aCBDb2RlIgogICAgICAgICAgICBjb25zdCB0b2dnbGUgPSBhd2FpdCBwYWdlLndhaXRGb3JTZWxlY3RvcigKICAgICAgICAgICAgICAgICdidXR0b25bZGF0YS11aWE9ImxvZ2luLXRvZ2dsZS1idXR0b24iXScsIHsgdGltZW91dDogNjAwMDAgfSk7CiAgICAgICAgICAgIGNvbnNvbGUubG9nKCJDbGlja2luZyAnU2lnbiBpbiB3aXRoIENvZGUnLi4uIik7CiAgICAgICAgICAgIGF3YWl0IHRvZ2dsZS5jbGljaygpOwogICAgICAgICAgICBhd2FpdCBzbGVlcCgyMDAwKTsKCiAgICAgICAgICAgIC8vIFN0ZXAgMjogZW50ZXIgdGhlIGFjY291bnQgZW1haWwgYW5kIHJlcXVlc3QgYSBzaWduLWluIGNvZGUKICAgICAgICAgICAgY29uc29sZS5sb2coJ0VudGVyaW5nIGVtYWlsLi4uJyk7CiAgICAgICAgICAgIGF3YWl0IHBhZ2Uud2FpdEZvclNlbGVjdG9yKCdpbnB1dFtuYW1lPSJ1c2VyTG9naW5JZCJdJywgeyB0aW1lb3V0OiAzMDAwMCB9KTsKICAgICAgICAgICAgYXdhaXQgcGFnZS50eXBlKCdpbnB1dFtuYW1lPSJ1c2VyTG9naW5JZCJdJywgcHJvY2Vzcy5lbnYuTkVURkxJWF9FTUFJTCwgeyBkZWxheTogMTAwIH0pOwogICAgICAgICAgICBhd2FpdCBwYWdlLmNsaWNrKCdidXR0b25bdHlwZT0ic3VibWl0Il0nKTsKICAgICAgICAgICAgYXdhaXQgc2xlZXAoMjAwMCk7IC8vIHdhaXQgZm9yIHRoZSBjb2RlIGVtYWlsIHRvIGFycml2ZQoKICAgICAgICAgICAgLy8gU3RlcCAzOiByZXRyaWV2ZSB0aGUgc2lnbi1pbiBjb2RlIGZyb20gR21haWwgKHBvbGwgdXAgdG8gfjEwMHMpCiAgICAgICAgICAgIGNvbnNvbGUubG9nKCdXYWl0aW5nIGZvciBzaWduLWluIGNvZGUuLi4nKTsKICAgICAgICAgICAgbGV0IHNpZ25JbkNvZGUgPSBudWxsOwogICAgICAgICAgICBsZXQgYXR0ZW1wdHMgPSAwOwogICAgICAgICAgICB3aGlsZSAoIXNpZ25JbkNvZGUgJiYgYXR0ZW1wdHMgPCAxMCkgewogICAgICAgICAgICAgICAgc2lnbkluQ29kZSA9IGF3YWl0IGdldE5ldGZsaXhDb2RlKGF1dGgpOwogICAgICAgICAgICAgICAgaWYgKCFzaWduSW5Db2RlKSB7CiAgICAgICAgICAgICAgICAgICAgY29uc29sZS5sb2coJ1NpZ24taW4gY29kZSBub3QgcmVjZWl2ZWQgeWV0LCByZXRyeWluZy4uLicpOwogICAgICAgICAgICAgICAgICAgIGF3YWl0IHNsZWVwKDEwMDAwKTsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIGF0dGVtcHRzKys7CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGlmICghc2lnbkluQ29kZSkgewogICAgICAgICAgICAgICAgY29uc29sZS5sb2coJ0ZhaWxlZCB0byByZXRyaWV2ZSBzaWduLWluIGNvZGUuJyk7CiAgICAgICAgICAgICAgICByZXR1cm4gZmFsc2U7CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGNvbnNvbGUubG9nKGBSZWNlaXZlZCBzaWduLWluIGNvZGU6ICR7c2lnbkluQ29kZX1gKTsKCiAgICAgICAgICAgIC8vIFN0ZXAgNDogZW50ZXIgdGhlIHNpZ24taW4gY29kZSBhbmQgc3VibWl0CiAgICAgICAgICAgIGNvbnNvbGUubG9nKCdFbnRlcmluZyBzaWduLWluIGNvZGUuLi4nKTsKICAgICAgICAgICAgYXdhaXQgcGFnZS53YWl0Rm9yU2VsZWN0b3IoJ2lucHV0W25hbWU9Im90cCJdJywgeyB0aW1lb3V0OiAzMDAwMCB9KTsKICAgICAgICAgICAgYXdhaXQgcGFnZS50eXBlKCdpbnB1dFtuYW1lPSJvdHAiXScsIHNpZ25JbkNvZGUsIHsgZGVsYXk6IDEwMCB9KTsKICAgICAgICAgICAgYXdhaXQgcGFnZS5jbGljaygnYnV0dG9uW3R5cGU9InN1Ym1pdCJdJyk7CiAgICAgICAgICAgIGF3YWl0IHNsZWVwKDMwMDApOwogICAgICAgIH0KCiAgICAgICAgLy8gU3RlcCA1OiBjbGljayAiQ29uZmlybSBVcGRhdGUiIG9uIHRoZSBob3VzZWhvbGQgcGFnZQogICAgICAgIGNvbnNvbGUubG9nKCJGaW5kaW5nICdDb25maXJtIFVwZGF0ZScgYnV0dG9uLi4uIik7CiAgICAgICAgY29uZmlybUJ0biA9IGF3YWl0IHBhZ2Uud2FpdEZvclNlbGVjdG9yKAogICAgICAgICAgICAnYnV0dG9uW2RhdGEtdWlhPSJzZXQtcHJpbWFyeS1sb2NhdGlvbi1hY3Rpb24iXScsIHsgdGltZW91dDogNjAwMDAgfSk7CiAgICAgICAgY29uc29sZS5sb2coIkNsaWNraW5nICdDb25maXJtIFVwZGF0ZScuLi4iKTsKICAgICAgICBhd2FpdCBjb25maXJtQnRuLmNsaWNrKCk7CiAgICAgICAgYXdhaXQgc2xlZXAoMzAwMCk7CiAgICAgICAgY29uc29sZS5sb2coJ0hvdXNlaG9sZCBjb25maXJtYXRpb24gc3VjY2Vzc2Z1bCEnKTsKICAgICAgICByZXR1cm4gdHJ1ZTsKICAgIH0gY2F0Y2ggKGVycm9yKSB7CiAgICAgICAgY29uc29sZS5lcnJvcignRXJyb3IgZHVyaW5nIE5ldGZsaXggaG91c2Vob2xkIGNvbmZpcm1hdGlvbjonLCBlcnJvcik7CiAgICAgICAgcmV0dXJuIGZhbHNlOwogICAgfSBmaW5hbGx5IHsKICAgICAgICBhd2FpdCBicm93c2VyLmNsb3NlKCk7CiAgICB9Cn0KCm1vZHVsZS5leHBvcnRzID0geyBjb25maXJtTmV0ZmxpeEhvdXNlaG9sZCB9Owo=
+require('dotenv').config();
+const puppeteer = require('puppeteer');
+const { getNetflixCode } = require('./getNetflixCode');
+
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+// Returns true when the household update was confirmed, false otherwise.
+// Callers must only mark the email as read on true — the old code swallowed
+// every failure and the caller marked the mail read anyway, so a failed
+// approval was never retried.
+async function confirmNetflixHousehold(confirmationLink, auth) {
+    const browser = await puppeteer.launch({
+        // --disable-dev-shm-usage is required in GitHub Actions: the default
+        // /dev/shm is tiny there and Chrome crashes without it.
+        args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-gpu'],
+        headless: true,
+    });
+    const page = await browser.newPage();
+
+    try {
+        console.log('Opening confirmation link');
+        await page.goto(confirmationLink, { waitUntil: 'domcontentloaded', timeout: 60000 });
+
+        // Are we already on the household-confirm page (signed-in session)?
+        // NOTE: the old code checked `confirmUpdateBtn.length < 0`, which is
+        // never true for an array, so the sign-in flow below NEVER ran and
+        // every run died waiting 100s for a button on the login page.
+        let confirmBtn = null;
+        try {
+            confirmBtn = await page.waitForSelector(
+                'button[data-uia="set-primary-location-action"]', { timeout: 15000 });
+        } catch {
+            confirmBtn = null; // not signed in yet — fall through to login
+        }
+
+        if (!confirmBtn) {
+            // Step 1: switch the login form to "Sign in with Code"
+            const toggle = await page.waitForSelector(
+                'button[data-uia="login-toggle-button"]', { timeout: 60000 });
+            console.log("Clicking 'Sign in with Code'...");
+            await toggle.click();
+            await sleep(2000);
+
+            // Step 2: enter the account email and request a sign-in code
+            console.log('Entering email...');
+            await page.waitForSelector('input[name="userLoginId"]', { timeout: 30000 });
+            await page.type('input[name="userLoginId"]', process.env.NETFLIX_EMAIL, { delay: 100 });
+            await page.click('button[type="submit"]');
+            await sleep(2000); // wait for the code email to arrive
+
+            // Step 3: retrieve the sign-in code from Gmail (poll up to ~100s)
+            console.log('Waiting for sign-in code...');
+            let signInCode = null;
+            let attempts = 0;
+            while (!signInCode && attempts < 10) {
+                signInCode = await getNetflixCode(auth);
+                if (!signInCode) {
+                    console.log('Sign-in code not received yet, retrying...');
+                    await sleep(10000);
+                }
+                attempts++;
+            }
+
+            if (!signInCode) {
+                console.log('Failed to retrieve sign-in code.');
+                return false;
+            }
+
+            console.log(`Received sign-in code: ${signInCode}`);
+
+            // Step 4: enter the sign-in code and submit
+            console.log('Entering sign-in code...');
+            await page.waitForSelector('input[name="otp"]', { timeout: 30000 });
+            await page.type('input[name="otp"]', signInCode, { delay: 100 });
+            await page.click('button[type="submit"]');
+            await sleep(3000);
+        }
+
+        // Step 5: click "Confirm Update" on the household page
+        console.log("Finding 'Confirm Update' button...");
+        confirmBtn = await page.waitForSelector(
+            'button[data-uia="set-primary-location-action"]', { timeout: 60000 });
+        console.log("Clicking 'Confirm Update'...");
+        await confirmBtn.click();
+        await sleep(3000);
+        console.log('Household confirmation successful!');
+        return true;
+    } catch (error) {
+        console.error('Error during Netflix household confirmation:', error);
+        return false;
+    } finally {
+        await browser.close();
+    }
+}
+
+module.exports = { confirmNetflixHousehold };
