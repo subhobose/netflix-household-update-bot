@@ -1,1 +1,42 @@
-Ly8gaW5kZXguanMKY29uc3QgeyBnZXRBdXRoZW50aWNhdGVkQ2xpZW50IH0gPSByZXF1aXJlKCcuL29hdXRoMicpOwpjb25zdCB7IGxpc3ROZXRmbGl4RW1haWxzIH0gPSByZXF1aXJlKCcuL2ZldGNoRW1haWxzJyk7CmNvbnN0IHsgZ2V0RW1haWxDb250ZW50IH0gPSByZXF1aXJlKCcuL2dldEVtYWlsQ29udGVudCcpOwpjb25zdCB7IGV4dHJhY3RDb25maXJtYXRpb25MaW5rIH0gPSByZXF1aXJlKCcuL2V4dHJhY3RDb25maXJtYXRpb25MaW5rJyk7CmNvbnN0IHsgbWFya0VtYWlsQXNSZWFkIH0gPSByZXF1aXJlKCcuL21hcmtFbWFpbEFzUmVhZCcpOwpjb25zdCB7IGNvbmZpcm1OZXRmbGl4SG91c2Vob2xkIH0gPSByZXF1aXJlKCcuL2NvbmZpcm1OZXRmbGl4SG91c2Vob2xkJyk7Cgphc3luYyBmdW5jdGlvbiBwcm9jZXNzRW1haWxzKCkgewogICAgdHJ5IHsKICAgICAgICBjb25zdCBhdXRoID0gYXdhaXQgZ2V0QXV0aGVudGljYXRlZENsaWVudCgpOwogICAgICAgIGNvbnN0IGVtYWlscyA9IGF3YWl0IGxpc3ROZXRmbGl4RW1haWxzKGF1dGgpOwogICAgICAgIGNvbnNvbGUubG9nKGBGb3VuZCAke2VtYWlscy5sZW5ndGh9IE5ldGZsaXggZW1haWwocykuYCk7CgogICAgICAgIGZvciAoY29uc3QgZW1haWwgb2YgZW1haWxzKSB7CiAgICAgICAgICAgIHRyeSB7CiAgICAgICAgICAgICAgICBjb25zdCBjb250ZW50ID0gYXdhaXQgZ2V0RW1haWxDb250ZW50KGF1dGgsIGVtYWlsLmlkKTsKICAgICAgICAgICAgICAgIGNvbnN0IGxpbmsgPSBleHRyYWN0Q29uZmlybWF0aW9uTGluayhjb250ZW50KTsKICAgICAgICAgICAgICAgIGlmICghbGluaykgewogICAgICAgICAgICAgICAgICAgIGNvbnNvbGUubG9nKCdObyBjb25maXJtYXRpb24gbGluayBmb3VuZCBpbiBlbWFpbDonLCBlbWFpbC5pZCk7CiAgICAgICAgICAgICAgICAgICAgY29udGludWU7CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICBjb25zb2xlLmxvZyhgQ2xpY2tpbmcgY29uZmlybWF0aW9uIGxpbms6ICR7bGlua31gKTsKICAgICAgICAgICAgICAgIGNvbnN0IGNvbmZpcm1lZCA9IGF3YWl0IGNvbmZpcm1OZXRmbGl4SG91c2Vob2xkKGxpbmssIGF1dGgpOwogICAgICAgICAgICAgICAgaWYgKGNvbmZpcm1lZCkgewogICAgICAgICAgICAgICAgICAgIC8vIE9ubHkgbWFyayBhcyByZWFkIG9uIHN1Y2Nlc3M6IGEgZmFpbGVkIGNvbmZpcm1hdGlvbgogICAgICAgICAgICAgICAgICAgIC8vIHN0YXlzIHVucmVhZCBzbyB0aGUgbmV4dCBydW4gKDUgbWluIGxhdGVyKSByZXRyaWVzIGl0CiAgICAgICAgICAgICAgICAgICAgLy8gd2hpbGUgdGhlIDE1LW1pbnV0ZSBsaW5rIGlzIHN0aWxsIGFsaXZlLgogICAgICAgICAgICAgICAgICAgIGF3YWl0IG1hcmtFbWFpbEFzUmVhZChhdXRoLCBlbWFpbC5pZCk7CiAgICAgICAgICAgICAgICB9IGVsc2UgewogICAgICAgICAgICAgICAgICAgIGNvbnNvbGUubG9nKGBDb25maXJtYXRpb24gZmFpbGVkIGZvciBlbWFpbCAke2VtYWlsLmlkfTsgbGVhdmluZyB1bnJlYWQgdG8gcmV0cnkuYCk7CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0gY2F0Y2ggKGVtYWlsRXJyb3IpIHsKICAgICAgICAgICAgICAgIGNvbnNvbGUuZXJyb3IoYEVycm9yIHByb2Nlc3NpbmcgZW1haWwgJHtlbWFpbC5pZH06YCwgZW1haWxFcnJvcik7CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9IGNhdGNoIChlcnJvcikgewogICAgICBjb25zb2xlLmVycm9yKCdFcnJvciBmZXRjaGluZyBlbWFpbHM6JywgZXJyb3IpOwogICAgfQogIH0KCiAgcHJvY2Vzc0VtYWlscygpOwo=
+// index.js
+const { getAuthenticatedClient } = require('./oauth2');
+const { listNetflixEmails } = require('./fetchEmails');
+const { getEmailContent } = require('./getEmailContent');
+const { extractConfirmationLink } = require('./extractConfirmationLink');
+const { markEmailAsRead } = require('./markEmailAsRead');
+const { confirmNetflixHousehold } = require('./confirmNetflixHousehold');
+
+async function processEmails() {
+    try {
+        const auth = await getAuthenticatedClient();
+        const emails = await listNetflixEmails(auth);
+        console.log(`Found ${emails.length} Netflix email(s).`);
+
+        for (const email of emails) {
+            try {
+                const content = await getEmailContent(auth, email.id);
+                const link = extractConfirmationLink(content);
+                if (!link) {
+                    console.log('No confirmation link found in email:', email.id);
+                    continue;
+                }
+                console.log(`Clicking confirmation link: ${link}`);
+                const confirmed = await confirmNetflixHousehold(link, auth);
+                if (confirmed) {
+                    // Only mark as read on success: a failed confirmation
+                    // stays unread so the next run (5 min later) retries it
+                    // while the 15-minute link is still alive.
+                    await markEmailAsRead(auth, email.id);
+                } else {
+                    console.log(`Confirmation failed for email ${email.id}; leaving unread to retry.`);
+                }
+            } catch (emailError) {
+                console.error(`Error processing email ${email.id}:`, emailError);
+            }
+        }
+    } catch (error) {
+      console.error('Error fetching emails:', error);
+    }
+  }
+
+  processEmails();
