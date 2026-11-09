@@ -1,1 +1,34 @@
-Y29uc3QgY2hlZXJpbyA9IHJlcXVpcmUoJ2NoZWVyaW8nKTsKCmZ1bmN0aW9uIGV4dHJhY3RDb25maXJtYXRpb25MaW5rKGVtYWlsSHRtbCkgewogLy8gTG9hZCB0aGUgZW1haWwncyBIVE1MIGNvbnRlbnQgaW50byBDaGVlcmlvCiBjb25zdCAkID0gY2hlZXJpby5sb2FkKGVtYWlsSHRtbCk7CgogLy8gVGhlIGJ1dHRvbiBpbiB0aGUgcmVhbCBOZXRmbGl4IG1haWwgcmVhZHMgIlllcywgdGhpcyB3YXMgbWUiICh2ZXJpZmllZAogLy8gYWdhaW5zdCBhIGxpdmUgaG91c2Vob2xkLXVwZGF0ZSBlbWFpbCkuIE1hdGNoIGl0IHRvbGVyYW50bHkg4oCUIGV4dHJhCiAvLyB3aGl0ZXNwYWNlIG9yIGEgY2FzZSBjaGFuZ2UgaW4gYSBmdXR1cmUgbWFpbCBzaG91bGRuJ3QgYnJlYWsgdGhlIGJvdC4KIGxldCBjb25maXJtYXRpb25MaW5rID0gbnVsbDsKICQoJ2EnKS5lYWNoKChpLCBlbCkgPT4gewogICBjb25zdCBsaW5rVGV4dCA9ICQoZWwpLnRleHQoKS5yZXBsYWNlKC9ccysvZywgJyAnKS50cmltKCkudG9Mb3dlckNhc2UoKTsKICAgaWYgKGxpbmtUZXh0ID09PSAneWVzLCB0aGlzIHdhcyBtZScpIHsKICAgICBjb25maXJtYXRpb25MaW5rID0gJChlbCkuYXR0cignaHJlZicpOwogICAgIHJldHVybiBmYWxzZTsgLy8gQnJlYWsgb3V0IG9mIHRoZSBsb29wIG9uY2UgZm91bmQKICAgfQogfSk7CgogLy8gRmFsbGJhY2s6IHRoZSBjb25maXJtYXRpb24gVVJMIGFsd2F5cyBwb2ludHMgYXQgTmV0ZmxpeCdzCiAvLyB1cGRhdGUtcHJpbWFyeS1sb2NhdGlvbiBwYWdlLCB3aGF0ZXZlciB0aGUgYnV0dG9uIHRleHQgc2F5cy4KIGlmICghY29uZmlybWF0aW9uTGluaykgewogICAkKCdhJykuZWFjaCgoaSwgZWwpID0+IHsKICAgICBjb25zdCBocmVmID0gJChlbCkuYXR0cignaHJlZicpIHx8ICcnOwogICAgIGlmIChocmVmLmluY2x1ZGVzKCduZXRmbGl4LmNvbS9hY2NvdW50L3VwZGF0ZS1wcmltYXJ5LWxvY2F0aW9uJykpIHsKICAgICAgIGNvbmZpcm1hdGlvbkxpbmsgPSBocmVmOwogICAgICAgcmV0dXJuIGZhbHNlOwogICAgIH0KICAgfSk7CiB9CgogcmV0dXJuIGNvbmZpcm1hdGlvbkxpbms7Cn0KCm1vZHVsZS5leHBvcnRzID0geyBleHRyYWN0Q29uZmlybWF0aW9uTGluayB9Owo=
+const cheerio = require('cheerio');
+
+function extractConfirmationLink(emailHtml) {
+ // Load the email's HTML content into Cheerio
+ const $ = cheerio.load(emailHtml);
+
+ // The button in the real Netflix mail reads "Yes, this was me" (verified
+ // against a live household-update email). Match it tolerantly — extra
+ // whitespace or a case change in a future mail shouldn't break the bot.
+ let confirmationLink = null;
+ $('a').each((i, el) => {
+   const linkText = $(el).text().replace(/\s+/g, ' ').trim().toLowerCase();
+   if (linkText === 'yes, this was me') {
+     confirmationLink = $(el).attr('href');
+     return false; // Break out of the loop once found
+   }
+ });
+
+ // Fallback: the confirmation URL always points at Netflix's
+ // update-primary-location page, whatever the button text says.
+ if (!confirmationLink) {
+   $('a').each((i, el) => {
+     const href = $(el).attr('href') || '';
+     if (href.includes('netflix.com/account/update-primary-location')) {
+       confirmationLink = href;
+       return false;
+     }
+   });
+ }
+
+ return confirmationLink;
+}
+
+module.exports = { extractConfirmationLink };
