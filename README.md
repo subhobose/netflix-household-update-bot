@@ -1,1 +1,49 @@
-IyBuZXRmbGl4LWhvdXNlaG9sZC11cGRhdGUtYm90CgpCb3QgdG8gYXZvaWQgZG9pbmcgdGhhdCBhbm5veWluZyBob3VzZWhvbGQgdXBkYXRlIHlvdXJzZWxmLiBJdCBjaGVja3MgeW91cgpHbWFpbCBwZXJpb2RpY2FsbHkgYW5kIGNvbmZpcm1zIGhvdXNlaG9sZCB1cGRhdGVzLCBpZiBhbnkuCgojIyBIb3cgaXQgd29ya3MKCjEuIEdpdEh1YiBBY3Rpb25zIHJ1bnMgYG5vZGUgaW5kZXguanNgIGV2ZXJ5IDUgbWludXRlcy4KMi4gYGZldGNoRW1haWxzLmpzYCBsaXN0cyB1bnJlYWQgbWFpbCBmcm9tIGBpbmZvQGFjY291bnQubmV0ZmxpeC5jb21gIHdpdGgKICAgc3ViamVjdCAiSW1wb3J0YW50OiBIb3cgdG8gdXBkYXRlIHlvdXIgTmV0ZmxpeCBob3VzZWhvbGQiIGZyb20gdGhlIGxhc3QKICAgMTUgbWludXRlcyAodGhlIGNvbmZpcm1hdGlvbiBsaW5rIGV4cGlyZXMgYWZ0ZXIgMTUgbWludXRlcykuCjMuIGBleHRyYWN0Q29uZmlybWF0aW9uTGluay5qc2AgcHVsbHMgdGhlICJZZXMsIHRoaXMgd2FzIG1lIiBsaW5rIG91dCBvZiB0aGUKICAgZW1haWwgKGZhbGxzIGJhY2sgdG8gYW55IGBuZXRmbGl4LmNvbS9hY2NvdW50L3VwZGF0ZS1wcmltYXJ5LWxvY2F0aW9uYAogICBsaW5rIGlmIE5ldGZsaXggZXZlciByZW5hbWVzIHRoZSBidXR0b24pLgo0LiBgY29uZmlybU5ldGZsaXhIb3VzZWhvbGQuanNgIG9wZW5zIHRoZSBsaW5rIGluIGhlYWRsZXNzIENocm9tZS4gSWYgeW91J3JlCiAgIG5vdCBzaWduZWQgaW4sIGl0IHN3aXRjaGVzIHRvICJTaWduIGluIHdpdGggQ29kZSIsIGVudGVycyB5b3VyIGVtYWlsLAogICByZWFkcyB0aGUgNC1kaWdpdCBjb2RlIG91dCBvZiB5b3VyIEdtYWlsIChgZ2V0TmV0ZmxpeENvZGUuanNgKSwgc2lnbnMgaW4sCiAgIHRoZW4gY2xpY2tzIHRoZSAiQ29uZmlybSBVcGRhdGUiIGJ1dHRvbi4KNS4gT25seSBvbiBzdWNjZXNzIGlzIHRoZSBlbWFpbCBtYXJrZWQgYXMgcmVhZCwgc28gYSBmYWlsZWQgYXR0ZW1wdCBpcwogICByZXRyaWVkIG9uIHRoZSBuZXh0IHJ1biB3aGlsZSB0aGUgbGluayBpcyBzdGlsbCBhbGl2ZS4KCiMjIFNldHVwCgoxLiBgbnBtIGNpYCAoaW5zdGFsbHMgZGVwZW5kZW5jaWVzLCBpbmNsdWRpbmcgdGhlIENocm9tZSBidWlsZCBQdXBwZXRlZXIgdXNlcykuCjIuIEZvbGxvdyB0aGUgR21haWwgQVBJIHNldHVwIGRvY3MgYW5kIGNyZWF0ZSBhIEdvb2dsZSBDbG91ZCBPQXV0aCBjbGllbnQuCjMuIFNldCB0aGVzZSBzZWNyZXRzIGluIHRoZSByZXBvIChTZXR0aW5ncyDihpIgU2VjcmV0cyBhbmQgdmFyaWFibGVzIOKGkgogICBBY3Rpb25zKSDigJQgdGhlIHdvcmtmbG93IHJlYWRzIHRoZW0gYXMgZW52aXJvbm1lbnQgdmFyaWFibGVzOgogICAtIGBHT09HTEVfQ0xJRU5UX0lEYCwgYEdPT0dMRV9DTElFTlRfU0VDUkVUYCwgYEdPT0dMRV9SRURJUkVDVF9VUklgCiAgIC0gYEdPT0dMRV9UT0tFTmAg4oCUIHRoZSBmdWxsIHRva2VuIEpTT04gKippbmNsdWRpbmcgYHJlZnJlc2hfdG9rZW5gKiosIG9yCiAgICAgYXV0aCBicmVha3Mgb25jZSB0aGUgYWNjZXNzIHRva2VuIGV4cGlyZXMgKH4xIGhvdXIpCiAgIC0gYE5FVEZMSVhfRU1BSUxgIOKAlCB0aGUgZW1haWwgYWRkcmVzcyBvbiB0aGUgTmV0ZmxpeCBhY2NvdW50CjQuIExvY2FsIHJ1bjogY3JlYXRlIGEgYC5lbnZgIHdpdGggdGhlIHNhbWUgdmFsdWVzIGFuZCBydW4gYG5vZGUgaW5kZXguanNgLgogICAoYC5lbnZgLCBgdG9rZW4uanNvbmAgYW5kIGBjcmVkZW50aWFscy5qc29uYCBhcmUgZ2l0aWdub3JlZCDigJQgbmV2ZXIKICAgY29tbWl0IHRoZW0uKQoKIyMgVGVzdHMKCmBucG0gdGVzdGAgcnVucyBgdGVzdC1ib3QuanNgOiBsaW5rIGV4dHJhY3Rpb24gYWdhaW5zdCBhIHJlYWwgTmV0ZmxpeApob3VzZWhvbGQgZW1haWwsIG5lc3RlZC1NSU1FIGJvZHkgcGFyc2luZywgc2lnbi1pbiBjb2RlIGV4dHJhY3Rpb24sIGFuZCBhClB1cHBldGVlciBsYXVuY2ggY2hlY2suIE5vIHJlYWwgR21haWwgb3IgTmV0ZmxpeCBjYWxscywgbm90aGluZyBpcyBhcHByb3ZlZC4KCiMjIE5vdGVzCgotIFJ1biB0aW1lcyBjYW4gdmFyeTogR2l0SHViJ3Mgc2NoZWR1bGVkIHdvcmtmbG93cyBkb24ndCBhbHdheXMgZmlyZQogIGV4YWN0bHkgb24gdGhlIDUtbWludXRlIG1hcmssIGFuZCB0aGUgbGluayBvbmx5IGxpdmVzIDE1IG1pbnV0ZXMsIHNvIGFuCiAgYXBwcm92YWwgY2FuIG9jY2FzaW9uYWxseSBiZSBtaXNzZWQgaWYgQWN0aW9ucyBpcyBkZWxheWVkLgotIGBjbGlja0NvbmZpcm1hdGlvbkxpbmsuanNgIGlzIHVudXNlZCAocGxhaW4gSFRUUCBjYW4ndCBkcml2ZSBOZXRmbGl4J3MKICBKUyBjb25maXJtIHBhZ2UpIOKAlCB0aGUgUHVwcGV0ZWVyIGZsb3cgaW4gYGNvbmZpcm1OZXRmbGl4SG91c2Vob2xkLmpzYCBpcwogIHRoZSBsaXZlIHBhdGguCg==
+# netflix-household-update-bot
+
+Bot to avoid doing that annoying household update yourself. It checks your
+Gmail periodically and confirms household updates, if any.
+
+## How it works
+
+1. GitHub Actions runs `node index.js` every 5 minutes.
+2. `fetchEmails.js` lists unread mail from `info@account.netflix.com` with
+   subject "Important: How to update your Netflix household" from the last
+   15 minutes (the confirmation link expires after 15 minutes).
+3. `extractConfirmationLink.js` pulls the "Yes, this was me" link out of the
+   email (falls back to any `netflix.com/account/update-primary-location`
+   link if Netflix ever renames the button).
+4. `confirmNetflixHousehold.js` opens the link in headless Chrome. If you're
+   not signed in, it switches to "Sign in with Code", enters your email,
+   reads the 4-digit code out of your Gmail (`getNetflixCode.js`), signs in,
+   then clicks the "Confirm Update" button.
+5. Only on success is the email marked as read, so a failed attempt is
+   retried on the next run while the link is still alive.
+
+## Setup
+
+1. `npm ci` (installs dependencies, including the Chrome build Puppeteer uses).
+2. Follow the Gmail API setup docs and create a Google Cloud OAuth client.
+3. Set these secrets in the repo (Settings → Secrets and variables →
+   Actions) — the workflow reads them as environment variables:
+   - `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REDIRECT_URI`
+   - `GOOGLE_TOKEN` — the full token JSON **including `refresh_token`**, or
+     auth breaks once the access token expires (~1 hour)
+   - `NETFLIX_EMAIL` — the email address on the Netflix account
+4. Local run: create a `.env` with the same values and run `node index.js`.
+   (`.env`, `token.json` and `credentials.json` are gitignored — never
+   commit them.)
+
+## Tests
+
+`npm test` runs `test-bot.js`: link extraction against a real Netflix
+household email, nested-MIME body parsing, sign-in code extraction, and a
+Puppeteer launch check. No real Gmail or Netflix calls, nothing is approved.
+
+## Notes
+
+- Run times can vary: GitHub's scheduled workflows don't always fire
+  exactly on the 5-minute mark, and the link only lives 15 minutes, so an
+  approval can occasionally be missed if Actions is delayed.
+- `clickConfirmationLink.js` is unused (plain HTTP can't drive Netflix's
+  JS confirm page) — the Puppeteer flow in `confirmNetflixHousehold.js` is
+  the live path.
