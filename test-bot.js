@@ -1,1 +1,87 @@
-Ly8gTG9jYWwgdGVzdHMgZm9yIHRoZSBmaXhlZCBib3QuIE5vIHJlYWwgR21haWwvTmV0ZmxpeCBjYWxscywgbm8gYXBwcm92YWxzLgovLyBSdW46IG5vZGUgdGVzdC1ib3QuanMKY29uc3QgYXNzZXJ0ID0gcmVxdWlyZSgnYXNzZXJ0Jyk7CmNvbnN0IGZzID0gcmVxdWlyZSgnZnMnKTsKCi8vIC0tLS0gMS4gZXh0cmFjdENvbmZpcm1hdGlvbkxpbmsgYWdhaW5zdCB0aGUgUkVBTCBob3VzZWhvbGQgZW1haWwgSFRNTCAtLS0tCmNvbnN0IHsgZXh0cmFjdENvbmZpcm1hdGlvbkxpbmsgfSA9IHJlcXVpcmUoJy4vZXh0cmFjdENvbmZpcm1hdGlvbkxpbmsnKTsKY29uc3QgcmVhbEh0bWwgPSBmcy5yZWFkRmlsZVN5bmMoCiAgJy9ob21lL2hhdGNoL3dvcmtzcGFjZS9lbWFpbC9nbWFpbC8yMjBhOGYzOTVhNTcyZmFiOGNhODU4ZDVmNzllNjc2OWZlOTBhNzMxMDMzMjkyMWJhNTNiNjk5YWMzZTQ2MWJlLmh0bWwnLAogICd1dGY4JwopOwpjb25zdCBsaW5rID0gZXh0cmFjdENvbmZpcm1hdGlvbkxpbmsocmVhbEh0bWwpOwpjb25zb2xlLmxvZygnMS4gZXh0cmFjdGVkIGxpbms6JywgbGluayAmJiBsaW5rLnNsaWNlKDAsIDgwKSArICcuLi4nKTsKYXNzZXJ0KGxpbmsgJiYgbGluay5zdGFydHNXaXRoKCdodHRwczovL3d3dy5uZXRmbGl4LmNvbS9hY2NvdW50L3VwZGF0ZS1wcmltYXJ5LWxvY2F0aW9uP25mdG9rZW49JyksCiAgJ3Nob3VsZCBleHRyYWN0IHRoZSB1cGRhdGUtcHJpbWFyeS1sb2NhdGlvbiBsaW5rIGZyb20gdGhlIHJlYWwgZW1haWwnKTsKYXNzZXJ0KGxpbmsuaW5jbHVkZXMoJ29wZXJhdGlvbj11cGRhdGUnKSwgJ2xpbmsgc2hvdWxkIGNhcnJ5IG9wZXJhdGlvbj11cGRhdGUnKTsKCi8vIEZhbGxiYWNrIHBhdGg6IGJ1dHRvbiB0ZXh0IGNoYW5nZWQsIGhyZWYgc3RpbGwgdXBkYXRlLXByaW1hcnktbG9jYXRpb24uCmNvbnN0IGFsdGVyZWQgPSByZWFsSHRtbC5yZXBsYWNlKCdZZXMsIHRoaXMgd2FzIG1lJywgJ0NvbmZpcm0gdGhpcyBkZXZpY2UnKTsKYXNzZXJ0KGV4dHJhY3RDb25maXJtYXRpb25MaW5rKGFsdGVyZWQpID09PSBsaW5rLCAnZmFsbGJhY2sgc2hvdWxkIGZpbmQgdGhlIHNhbWUgbGluayBieSBVUkwnKTsKY29uc29sZS5sb2coJyAgIGZhbGxiYWNrIChyZW5hbWVkIGJ1dHRvbikgT0snKTsKCi8vIC0tLS0gMi4gZ2V0RW1haWxDb250ZW50IHdpdGggYSBORVNURUQgbXVsdGlwYXJ0IHBheWxvYWQgLS0tLQpjb25zdCB7IGdvb2dsZSB9ID0gcmVxdWlyZSgnZ29vZ2xlYXBpcycpOwpjb25zdCBiNjQgPSAocykgPT4gQnVmZmVyLmZyb20ocywgJ3V0ZjgnKS50b1N0cmluZygnYmFzZTY0Jyk7CmNvbnN0IG5lc3RlZFBheWxvYWQgPSB7CiAgbWltZVR5cGU6ICdtdWx0aXBhcnQvbWl4ZWQnLAogIHBhcnRzOiBbCiAgICB7CiAgICAgIG1pbWVUeXBlOiAnbXVsdGlwYXJ0L2FsdGVybmF0aXZlJywKICAgICAgcGFydHM6IFsKICAgICAgICB7IG1pbWVUeXBlOiAndGV4dC9wbGFpbicsIGJvZHk6IHsgZGF0YTogYjY0KCdwbGFpbiB0ZXh0JykgfSB9LAogICAgICAgIHsgbWltZVR5cGU6ICd0ZXh0L2h0bWwnLCBib2R5OiB7IGRhdGE6IGI2NCgnPGEgaHJlZj0iaHR0cHM6Ly94Ij5ZZXMsIHRoaXMgd2FzIG1lPC9hPicpIH0gfSwKICAgICAgXSwKICAgIH0sCiAgXSwKfTsKZ29vZ2xlLmdtYWlsID0gKCkgPT4gKHsKICB1c2VyczogeyBtZXNzYWdlczogeyBnZXQ6IGFzeW5jICgpID0+ICh7IGRhdGE6IHsgcGF5bG9hZDogbmVzdGVkUGF5bG9hZCB9IH0pIH0gfSwKfSk7CmNvbnN0IHsgZ2V0RW1haWxDb250ZW50IH0gPSByZXF1aXJlKCcuL2dldEVtYWlsQ29udGVudCcpOwooYXN5bmMgKCkgPT4gewogIGNvbnN0IGh0bWwgPSBhd2FpdCBnZXRFbWFpbENvbnRlbnQoe30sICdmYWtlLWlkJyk7CiAgYXNzZXJ0KGh0bWwuaW5jbHVkZXMoJ1llcywgdGhpcyB3YXMgbWUnKSwgJ3JlY3Vyc2l2ZSB3YWxrIHNob3VsZCBmaW5kIG5lc3RlZCB0ZXh0L2h0bWwnKTsKICBjb25zb2xlLmxvZygnMi4gZ2V0RW1haWxDb250ZW50IG5lc3RlZCBNSU1FIE9LOicsIEpTT04uc3RyaW5naWZ5KGh0bWwpKTsKCiAgLy8gLS0tLSAzLiBnZXROZXRmbGl4Q29kZTogZmluZHMgdGhlIGNvZGUsIGlnbm9yZXMgb3RoZXIgNC1kaWdpdCBudW1iZXJzIC0tLS0KICBjb25zdCBjb2RlUGF5bG9hZCA9IHsKICAgIG1pbWVUeXBlOiAnbXVsdGlwYXJ0L2FsdGVybmF0aXZlJywKICAgIHBhcnRzOiBbCiAgICAgIHsgbWltZVR5cGU6ICd0ZXh0L3BsYWluJywgYm9keTogeyBkYXRhOiBiNjQoJ1lvdXIgTmV0ZmxpeCBzaWduLWluIGNvZGUgaXMgNDgyMS4gVGhpcyBjb2RlIGV4cGlyZXMgaW4gMTUgbWludXRlcy4gKGMpIDIwMjYgTmV0ZmxpeCcpIH0gfSwKICAgIF0sCiAgfTsKICBsZXQgbWFya2VkUmVhZCA9IG51bGw7CiAgZ29vZ2xlLmdtYWlsID0gKCkgPT4gKHsKICAgIHVzZXJzOiB7CiAgICAgIG1lc3NhZ2VzOiB7CiAgICAgICAgbGlzdDogYXN5bmMgKCkgPT4gKHsgZGF0YTogeyBtZXNzYWdlczogW3sgaWQ6ICdjb2RlLW1zZy0xJyB9XSB9IH0pLAogICAgICAgIGdldDogYXN5bmMgKCkgPT4gKHsgZGF0YTogeyBwYXlsb2FkOiBjb2RlUGF5bG9hZCB9IH0pLAogICAgICAgIG1vZGlmeTogYXN5bmMgKHsgaWQgfSkgPT4geyBtYXJrZWRSZWFkID0gaWQ7IHJldHVybiB7fTsgfSwKICAgICAgfSwKICAgIH0sCiAgfSk7CiAgLy8gZ2V0TmV0ZmxpeENvZGUgcmVxdWlyZXMgLi9tYXJrRW1haWxBc1JlYWQsIHdoaWNoIHVzZXMgZ29vZ2xlLmdtYWlsIHRvbyDigJQgYWxyZWFkeSBzdHViYmVkIGFib3ZlLgogIGRlbGV0ZSByZXF1aXJlLmNhY2hlW3JlcXVpcmUucmVzb2x2ZSgnLi9nZXROZXRmbGl4Q29kZScpXTsKICBkZWxldGUgcmVxdWlyZS5jYWNoZVtyZXF1aXJlLnJlc29sdmUoJy4vbWFya0VtYWlsQXNSZWFkJyldOwogIGNvbnN0IHsgZ2V0TmV0ZmxpeENvZGUgfSA9IHJlcXVpcmUoJy4vZ2V0TmV0ZmxpeENvZGUnKTsKICBjb25zdCBjb2RlID0gYXdhaXQgZ2V0TmV0ZmxpeENvZGUoe30pOwogIGFzc2VydC5zdHJpY3RFcXVhbChjb2RlLCAnNDgyMScsIGBleHBlY3RlZCBjb2RlIDQ4MjEsIGdvdCAke2NvZGV9YCk7CiAgYXNzZXJ0LnN0cmljdEVxdWFsKG1hcmtlZFJlYWQsICdjb2RlLW1zZy0xJywgJ2NvZGUgZW1haWwgc2hvdWxkIGJlIG1hcmtlZCByZWFkIGFmdGVyIHVzZScpOwogIGNvbnNvbGUubG9nKCczLiBnZXROZXRmbGl4Q29kZSBPSzogY29kZSA9JywgY29kZSk7CgogIC8vIC0tLS0gNC4gcHVwcGV0ZWVyIGxhdW5jaGVzIHdpdGggdGhlIGJvdCdzIENJIGFyZ3MgLS0tLQogIGNvbnN0IHB1cHBldGVlciA9IHJlcXVpcmUoJ3B1cHBldGVlcicpOwogIGNvbnN0IGJyb3dzZXIgPSBhd2FpdCBwdXBwZXRlZXIubGF1bmNoKHsKICAgIGFyZ3M6IFsnLS1uby1zYW5kYm94JywgJy0tZGlzYWJsZS1zZXR1aWQtc2FuZGJveCcsICctLWRpc2FibGUtZGV2LXNobS11c2FnZScsICctLWRpc2FibGUtZ3B1J10sCiAgICBoZWFkbGVzczogdHJ1ZSwKICB9KTsKICBjb25zdCBwYWdlID0gYXdhaXQgYnJvd3Nlci5uZXdQYWdlKCk7CiAgYXdhaXQgcGFnZS5nb3RvKCdkYXRhOnRleHQvaHRtbCw8YnV0dG9uIGRhdGEtdWlhPSJzZXQtcHJpbWFyeS1sb2NhdGlvbi1hY3Rpb24iPkNvbmZpcm08L2J1dHRvbj4nLCB7IHdhaXRVbnRpbDogJ2RvbWNvbnRlbnRsb2FkZWQnIH0pOwogIGNvbnN0IGJ0biA9IGF3YWl0IHBhZ2UuJCgnYnV0dG9uW2RhdGEtdWlhPSJzZXQtcHJpbWFyeS1sb2NhdGlvbi1hY3Rpb24iXScpOwogIGFzc2VydChidG4sICdjb25maXJtLWJ1dHRvbiBzZWxlY3RvciBzaG91bGQgbWF0Y2gnKTsKICBhd2FpdCBicm93c2VyLmNsb3NlKCk7CiAgY29uc29sZS5sb2coJzQuIHB1cHBldGVlciBsYXVuY2ggKyBzZWxlY3RvciBjaGVjayBPSycpOwoKICBjb25zb2xlLmxvZygnXG5BTEwgVEVTVFMgUEFTU0VEJyk7Cn0pKCkuY2F0Y2goKGUpID0+IHsgY29uc29sZS5lcnJvcignVEVTVCBGQUlMRUQ6JywgZSk7IHByb2Nlc3MuZXhpdCgxKTsgfSk7Cg==
+// Local tests for the fixed bot. No real Gmail/Netflix calls, no approvals.
+// Run: node test-bot.js
+const assert = require('assert');
+const fs = require('fs');
+
+// ---- 1. extractConfirmationLink against the REAL household email HTML ----
+const { extractConfirmationLink } = require('./extractConfirmationLink');
+const realHtml = fs.readFileSync(
+  '/home/hatch/workspace/email/gmail/220a8f395a572fab8ca858d5f79e6769fe90a7310332921ba53b699ac3e461be.html',
+  'utf8'
+);
+const link = extractConfirmationLink(realHtml);
+console.log('1. extracted link:', link && link.slice(0, 80) + '...');
+assert(link && link.startsWith('https://www.netflix.com/account/update-primary-location?nftoken='),
+  'should extract the update-primary-location link from the real email');
+assert(link.includes('operation=update'), 'link should carry operation=update');
+
+// Fallback path: button text changed, href still update-primary-location.
+const altered = realHtml.replace('Yes, this was me', 'Confirm this device');
+assert(extractConfirmationLink(altered) === link, 'fallback should find the same link by URL');
+console.log('   fallback (renamed button) OK');
+
+// ---- 2. getEmailContent with a NESTED multipart payload ----
+const { google } = require('googleapis');
+const b64 = (s) => Buffer.from(s, 'utf8').toString('base64');
+const nestedPayload = {
+  mimeType: 'multipart/mixed',
+  parts: [
+    {
+      mimeType: 'multipart/alternative',
+      parts: [
+        { mimeType: 'text/plain', body: { data: b64('plain text') } },
+        { mimeType: 'text/html', body: { data: b64('<a href="https://x">Yes, this was me</a>') } },
+      ],
+    },
+  ],
+};
+google.gmail = () => ({
+  users: { messages: { get: async () => ({ data: { payload: nestedPayload } }) } },
+});
+const { getEmailContent } = require('./getEmailContent');
+(async () => {
+  const html = await getEmailContent({}, 'fake-id');
+  assert(html.includes('Yes, this was me'), 'recursive walk should find nested text/html');
+  console.log('2. getEmailContent nested MIME OK:', JSON.stringify(html));
+
+  // ---- 3. getNetflixCode: finds the code, ignores other 4-digit numbers ----
+  const codePayload = {
+    mimeType: 'multipart/alternative',
+    parts: [
+      { mimeType: 'text/plain', body: { data: b64('Your Netflix sign-in code is 4821. This code expires in 15 minutes. (c) 2026 Netflix') } },
+    ],
+  };
+  let markedRead = null;
+  google.gmail = () => ({
+    users: {
+      messages: {
+        list: async () => ({ data: { messages: [{ id: 'code-msg-1' }] } }),
+        get: async () => ({ data: { payload: codePayload } }),
+        modify: async ({ id }) => { markedRead = id; return {}; },
+      },
+    },
+  });
+  // getNetflixCode requires ./markEmailAsRead, which uses google.gmail too — already stubbed above.
+  delete require.cache[require.resolve('./getNetflixCode')];
+  delete require.cache[require.resolve('./markEmailAsRead')];
+  const { getNetflixCode } = require('./getNetflixCode');
+  const code = await getNetflixCode({});
+  assert.strictEqual(code, '4821', `expected code 4821, got ${code}`);
+  assert.strictEqual(markedRead, 'code-msg-1', 'code email should be marked read after use');
+  console.log('3. getNetflixCode OK: code =', code);
+
+  // ---- 4. puppeteer launches with the bot's CI args ----
+  const puppeteer = require('puppeteer');
+  const browser = await puppeteer.launch({
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-gpu'],
+    headless: true,
+  });
+  const page = await browser.newPage();
+  await page.goto('data:text/html,<button data-uia="set-primary-location-action">Confirm</button>', { waitUntil: 'domcontentloaded' });
+  const btn = await page.$('button[data-uia="set-primary-location-action"]');
+  assert(btn, 'confirm-button selector should match');
+  await browser.close();
+  console.log('4. puppeteer launch + selector check OK');
+
+  console.log('\nALL TESTS PASSED');
+})().catch((e) => { console.error('TEST FAILED:', e); process.exit(1); });
