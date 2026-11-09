@@ -1,1 +1,68 @@
-Y29uc3QgeyBnb29nbGUgfSA9IHJlcXVpcmUoJ2dvb2dsZWFwaXMnKTsKY29uc3QgeyBtYXJrRW1haWxBc1JlYWQgfSA9IHJlcXVpcmUoJy4vbWFya0VtYWlsQXNSZWFkJyk7CgovLyBTYW1lIG5lc3RlZC1NSU1FIHByb2JsZW0gYXMgZ2V0RW1haWxDb250ZW50OiB0aGUgdGV4dCBwYXJ0IGNhbiBzaXQgaW5zaWRlCi8vIG11bHRpcGFydC9hbHRlcm5hdGl2ZSwgYW5kIGEgbWVzc2FnZSBtYXkgaGF2ZSBubyBgcGFydHNgIGFycmF5IGF0IGFsbAovLyAoc2luZ2xlLXBhcnQgYm9keSBzdHJhaWdodCBvbiB0aGUgcGF5bG9hZCkuIFdhbGsgdGhlIHRyZWUgYW5kIHRha2UgdGhlCi8vIGZpcnN0IHRleHQvcGxhaW4gcGFydCwgZmFsbGluZyBiYWNrIHRvIHRleHQvaHRtbC4KZnVuY3Rpb24gY29sbGVjdFRleHRQYXJ0cyhwYXJ0LCBvdXQpIHsKICBpZiAoKHBhcnQubWltZVR5cGUgPT09ICd0ZXh0L3BsYWluJyB8fCBwYXJ0Lm1pbWVUeXBlID09PSAndGV4dC9odG1sJykKICAgICAgJiYgcGFydC5ib2R5ICYmIHBhcnQuYm9keS5kYXRhKSB7CiAgICBvdXQucHVzaCh7CiAgICAgIG1pbWVUeXBlOiBwYXJ0Lm1pbWVUeXBlLAogICAgICB0ZXh0OiBCdWZmZXIuZnJvbShwYXJ0LmJvZHkuZGF0YSwgJ2Jhc2U2NCcpLnRvU3RyaW5nKCd1dGY4JyksCiAgICB9KTsKICB9CiAgaWYgKEFycmF5LmlzQXJyYXkocGFydC5wYXJ0cykpIHsKICAgIGZvciAoY29uc3Qgc3ViIG9mIHBhcnQucGFydHMpIGNvbGxlY3RUZXh0UGFydHMoc3ViLCBvdXQpOwogIH0KfQoKYXN5bmMgZnVuY3Rpb24gZ2V0TmV0ZmxpeENvZGUoYXV0aCkgewogICAgY29uc3QgZ21haWwgPSBnb29nbGUuZ21haWwoeyB2ZXJzaW9uOiAndjEnLCBhdXRoIH0pOwoKICAgIC8vIGBhZnRlcjpgIHRha2VzIGEgdW5peCBlcG9jaCBpbiBzZWNvbmRzIOKAlCB2ZXJpZmllZCBsaXZlIGFnYWluc3QgR21haWwuCiAgICAvLyBEbyBOT1QgdXNlIGBuZXdlcl90aGFuOjEwbWAgaGVyZTogaW4gR21haWwgc2VhcmNoIGBtYCA9IG1vbnRocywKICAgIC8vIHNvIHRoYXQgd291bGQgbWF0Y2ggZXZlcnl0aGluZyBmcm9tIHRoZSBsYXN0IDEwIG1vbnRocy4KICAgIGNvbnN0IGN1cnJlbnRUaW1lID0gbmV3IERhdGUoKTsKICAgIGNvbnN0IHR3b01pbnV0ZXNBZ28gPSBuZXcgRGF0ZShjdXJyZW50VGltZSAtIDIgKiA2MCAqIDEwMDApOwogICAgY29uc3QgdGltZXN0YW1wID0gTWF0aC5mbG9vcih0d29NaW51dGVzQWdvLmdldFRpbWUoKSAvIDEwMDApOwoKICAgIGNvbnN0IHJlcyA9IGF3YWl0IGdtYWlsLnVzZXJzLm1lc3NhZ2VzLmxpc3QoewogICAgICB1c2VySWQ6ICdtZScsCiAgICAgIHE6IGBmcm9tOmluZm9AYWNjb3VudC5uZXRmbGl4LmNvbSBzdWJqZWN0OiJOZXRmbGl4OiB5b3VyIHNpZ24taW4gY29kZSIgaXM6dW5yZWFkIGFmdGVyOiR7dGltZXN0YW1wfWAsCiAgICAgIG1heFJlc3VsdHM6IDEKICAgIH0pOwoKICAgIGlmICghcmVzLmRhdGEubWVzc2FnZXMgfHwgcmVzLmRhdGEubWVzc2FnZXMubGVuZ3RoID09PSAwKSB7CiAgICAgIGNvbnNvbGUubG9nKCJObyBzaWduLWluIGNvZGUgZW1haWwgZm91bmQuIik7CiAgICAgIHJldHVybiBudWxsOwogICAgfQoKICAgIGNvbnN0IG1lc3NhZ2VJZCA9IHJlcy5kYXRhLm1lc3NhZ2VzWzBdLmlkOwogICAgY29uc3QgbWVzc2FnZSA9IGF3YWl0IGdtYWlsLnVzZXJzLm1lc3NhZ2VzLmdldCh7CiAgICAgICAgdXNlcklkOiAnbWUnLAogICAgICAgIGlkOiBtZXNzYWdlSWQKICAgIH0pOwogICAgY29uc3QgcGFydHMgPSBbXTsKICAgIGNvbGxlY3RUZXh0UGFydHMobWVzc2FnZS5kYXRhLnBheWxvYWQsIHBhcnRzKTsKICAgIGNvbnN0IHBsYWluID0gcGFydHMuZmluZChwID0+IHAubWltZVR5cGUgPT09ICd0ZXh0L3BsYWluJyk7CiAgICBjb25zdCBlbWFpbEJvZHkgPSBwbGFpbiA/IHBsYWluLnRleHQgOiAocGFydHNbMF0gPyBwYXJ0c1swXS50ZXh0IDogJycpOwogICAgaWYgKCFlbWFpbEJvZHkpIHsKICAgICAgY29uc29sZS5sb2coIlNpZ24taW4gY29kZSBlbWFpbCBoYWQgbm8gcmVhZGFibGUgYm9keS4iKTsKICAgICAgcmV0dXJuIG51bGw7CiAgICB9CgogICAgLy8gVGhlIGNvZGUgZW1haWwgc2F5cyBzb21ldGhpbmcgbGlrZSAiWW91ciBzaWduLWluIGNvZGUgaXMgMTIzNCIuCiAgICAvLyBQcmVmZXIgYSA0LWRpZ2l0IG51bWJlciBuZWFyIHRoZSB3b3JkICJjb2RlIiBzbyBhIHllYXIgb3Igb3RoZXIKICAgIC8vIDQtZGlnaXQgbnVtYmVyIGVsc2V3aGVyZSBpbiB0aGUgbWFpbCBjYW4ndCBiZSBtaXN0YWtlbiBmb3IgaXQuCiAgICBjb25zdCBuZWFyQ29kZSA9IGVtYWlsQm9keS5tYXRjaCgvY29kZVteMC05XXswLDQwfShcZHs0fSkvaSk7CiAgICBjb25zdCBjb2RlTWF0Y2ggPSBuZWFyQ29kZSB8fCBlbWFpbEJvZHkubWF0Y2goL1xiXGR7NH1cYi8pOwogICAgaWYgKGNvZGVNYXRjaCkgewogICAgICBhd2FpdCBtYXJrRW1haWxBc1JlYWQoYXV0aCwgbWVzc2FnZUlkKTsKICAgICAgcmV0dXJuIGNvZGVNYXRjaFsxXSB8fCBjb2RlTWF0Y2hbMF07CiAgICB9CiAgICByZXR1cm4gbnVsbDsKfQoKICBtb2R1bGUuZXhwb3J0cyA9IHsgZ2V0TmV0ZmxpeENvZGUgfTsK
+const { google } = require('googleapis');
+const { markEmailAsRead } = require('./markEmailAsRead');
+
+// Same nested-MIME problem as getEmailContent: the text part can sit inside
+// multipart/alternative, and a message may have no `parts` array at all
+// (single-part body straight on the payload). Walk the tree and take the
+// first text/plain part, falling back to text/html.
+function collectTextParts(part, out) {
+  if ((part.mimeType === 'text/plain' || part.mimeType === 'text/html')
+      && part.body && part.body.data) {
+    out.push({
+      mimeType: part.mimeType,
+      text: Buffer.from(part.body.data, 'base64').toString('utf8'),
+    });
+  }
+  if (Array.isArray(part.parts)) {
+    for (const sub of part.parts) collectTextParts(sub, out);
+  }
+}
+
+async function getNetflixCode(auth) {
+    const gmail = google.gmail({ version: 'v1', auth });
+
+    // `after:` takes a unix epoch in seconds — verified live against Gmail.
+    // Do NOT use `newer_than:10m` here: in Gmail search `m` = months,
+    // so that would match everything from the last 10 months.
+    const currentTime = new Date();
+    const twoMinutesAgo = new Date(currentTime - 2 * 60 * 1000);
+    const timestamp = Math.floor(twoMinutesAgo.getTime() / 1000);
+
+    const res = await gmail.users.messages.list({
+      userId: 'me',
+      q: `from:info@account.netflix.com subject:"Netflix: your sign-in code" is:unread after:${timestamp}`,
+      maxResults: 1
+    });
+
+    if (!res.data.messages || res.data.messages.length === 0) {
+      console.log("No sign-in code email found.");
+      return null;
+    }
+
+    const messageId = res.data.messages[0].id;
+    const message = await gmail.users.messages.get({
+        userId: 'me',
+        id: messageId
+    });
+    const parts = [];
+    collectTextParts(message.data.payload, parts);
+    const plain = parts.find(p => p.mimeType === 'text/plain');
+    const emailBody = plain ? plain.text : (parts[0] ? parts[0].text : '');
+    if (!emailBody) {
+      console.log("Sign-in code email had no readable body.");
+      return null;
+    }
+
+    // The code email says something like "Your sign-in code is 1234".
+    // Prefer a 4-digit number near the word "code" so a year or other
+    // 4-digit number elsewhere in the mail can't be mistaken for it.
+    const nearCode = emailBody.match(/code[^0-9]{0,40}(\d{4})/i);
+    const codeMatch = nearCode || emailBody.match(/\b\d{4}\b/);
+    if (codeMatch) {
+      await markEmailAsRead(auth, messageId);
+      return codeMatch[1] || codeMatch[0];
+    }
+    return null;
+}
+
+  module.exports = { getNetflixCode };
