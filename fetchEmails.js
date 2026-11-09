@@ -1,1 +1,23 @@
-Y29uc3QgeyBnb29nbGUgfSA9IHJlcXVpcmUoJ2dvb2dsZWFwaXMnKTsKCmFzeW5jIGZ1bmN0aW9uIGxpc3ROZXRmbGl4RW1haWxzKGF1dGgpIHsKICAgIGNvbnN0IGdtYWlsID0gZ29vZ2xlLmdtYWlsKHsgdmVyc2lvbjogJ3YxJywgYXV0aCB9KTsKICAgIC8vIE9ubHkgbG9vayBhdCByZWNlbnQgcmVxdWVzdHM6IHRoZSBjb25maXJtYXRpb24gbGluayBleHBpcmVzIDE1IG1pbnV0ZXMKICAgIC8vIGFmdGVyIE5ldGZsaXggc2VuZHMgaXQsIHNvIGFueXRoaW5nIG9sZGVyIGlzIGFscmVhZHkgdXNlbGVzcy4KICAgIC8vIGBhZnRlcjpgIHRha2VzIGEgdW5peCBlcG9jaCBpbiBzZWNvbmRzIOKAlCB2ZXJpZmllZCBsaXZlIGFnYWluc3QgR21haWw6CiAgICAvLyBgYWZ0ZXI6PG5vdy0zMG0+YCByZXR1cm5zIG9ubHkgbWFpbCBpbnNpZGUgdGhlIHdpbmRvdywgd2hpbGUKICAgIC8vIGBuZXdlcl90aGFuOjE1bWAgZG9lcyBOT1QgbWVhbiAxNSBtaW51dGVzIChgbWAgPSBtb250aHMgaW4gR21haWwKICAgIC8vIHNlYXJjaCksIHNvIG5ldmVyIHVzZSBuZXdlcl90aGFuIGhlcmUuCiAgICBjb25zdCBjdXJyZW50VGltZSA9IG5ldyBEYXRlKCk7CiAgICBjb25zdCBmaWZ0ZWVuTWludXRlc0FnbyA9IG5ldyBEYXRlKGN1cnJlbnRUaW1lIC0gMTUgKiA2MCAqIDEwMDApOwogICAgY29uc3QgdGltZXN0YW1wID0gTWF0aC5mbG9vcihmaWZ0ZWVuTWludXRlc0Fnby5nZXRUaW1lKCkgLyAxMDAwKTsKCiAgICBjb25zdCByZXMgPSBhd2FpdCBnbWFpbC51c2Vycy5tZXNzYWdlcy5saXN0KHsKICAgICAgdXNlcklkOiAnbWUnLAogICAgICBxOiBgZnJvbTppbmZvQGFjY291bnQubmV0ZmxpeC5jb20gc3ViamVjdDoiSW1wb3J0YW50OiBIb3cgdG8gdXBkYXRlIHlvdXIgTmV0ZmxpeCBob3VzZWhvbGQiIGlzOnVucmVhZCBhZnRlcjoke3RpbWVzdGFtcH1gLAogICAgICBtYXhSZXN1bHRzOiA1LAogICAgfSk7CiAgICByZXR1cm4gcmVzLmRhdGEubWVzc2FnZXMgfHwgW107CiAgfQoKICBtb2R1bGUuZXhwb3J0cyA9IHsgbGlzdE5ldGZsaXhFbWFpbHMgfTsK
+const { google } = require('googleapis');
+
+async function listNetflixEmails(auth) {
+    const gmail = google.gmail({ version: 'v1', auth });
+    // Only look at recent requests: the confirmation link expires 15 minutes
+    // after Netflix sends it, so anything older is already useless.
+    // `after:` takes a unix epoch in seconds — verified live against Gmail:
+    // `after:<now-30m>` returns only mail inside the window, while
+    // `newer_than:15m` does NOT mean 15 minutes (`m` = months in Gmail
+    // search), so never use newer_than here.
+    const currentTime = new Date();
+    const fifteenMinutesAgo = new Date(currentTime - 15 * 60 * 1000);
+    const timestamp = Math.floor(fifteenMinutesAgo.getTime() / 1000);
+
+    const res = await gmail.users.messages.list({
+      userId: 'me',
+      q: `from:info@account.netflix.com subject:"Important: How to update your Netflix household" is:unread after:${timestamp}`,
+      maxResults: 5,
+    });
+    return res.data.messages || [];
+  }
+
+  module.exports = { listNetflixEmails };
