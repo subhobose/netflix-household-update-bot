@@ -1,1 +1,29 @@
-Y29uc3QgeyBnb29nbGUgfSA9IHJlcXVpcmUoJ2dvb2dsZWFwaXMnKTsKCi8vIEdtYWlsIG1lc3NhZ2VzIGFyZSB1c3VhbGx5IG5lc3RlZCBtdWx0aXBhcnQgKGUuZy4gbXVsdGlwYXJ0L21peGVkCi8vIGNvbnRhaW5pbmcgbXVsdGlwYXJ0L2FsdGVybmF0aXZlIGNvbnRhaW5pbmcgdGV4dC9wbGFpbiArIHRleHQvaHRtbCkuCi8vIFRoZSBvbGQgY29kZSBvbmx5IGxvb2tlZCBhdCB0b3AtbGV2ZWwgcGFydHMsIHNvIHRoZSB0ZXh0L2h0bWwgcGFydCB3YXMKLy8gbWlzc2VkIHdoZW5ldmVyIGl0IHdhcyBuZXN0ZWQgb25lIGxldmVsIGRvd24sIGFuZCB0aGUgYm90IGV4dHJhY3RlZCBubwovLyBsaW5rIGF0IGFsbC4gV2FsayB0aGUgd2hvbGUgTUlNRSB0cmVlIGluc3RlYWQuCmZ1bmN0aW9uIGNvbGxlY3RIdG1sUGFydHMocGFydCwgb3V0KSB7CiAgaWYgKHBhcnQubWltZVR5cGUgPT09ICd0ZXh0L2h0bWwnICYmIHBhcnQuYm9keSAmJiBwYXJ0LmJvZHkuZGF0YSkgewogICAgb3V0LnB1c2goQnVmZmVyLmZyb20ocGFydC5ib2R5LmRhdGEsICdiYXNlNjQnKS50b1N0cmluZygndXRmOCcpKTsKICB9CiAgaWYgKEFycmF5LmlzQXJyYXkocGFydC5wYXJ0cykpIHsKICAgIGZvciAoY29uc3Qgc3ViIG9mIHBhcnQucGFydHMpIGNvbGxlY3RIdG1sUGFydHMoc3ViLCBvdXQpOwogIH0KfQoKYXN5bmMgZnVuY3Rpb24gZ2V0RW1haWxDb250ZW50KGF1dGgsIG1lc3NhZ2VJZCkgewogICAgY29uc3QgZ21haWwgPSBnb29nbGUuZ21haWwoeyB2ZXJzaW9uOiAndjEnLCBhdXRoIH0pOwogICAgY29uc3QgcmVzID0gYXdhaXQgZ21haWwudXNlcnMubWVzc2FnZXMuZ2V0KHsKICAgICAgdXNlcklkOiAnbWUnLAogICAgICBpZDogbWVzc2FnZUlkLAogICAgICBmb3JtYXQ6ICdmdWxsJywKICAgIH0pOwogICAgY29uc3QgY2h1bmtzID0gW107CiAgICBjb2xsZWN0SHRtbFBhcnRzKHJlcy5kYXRhLnBheWxvYWQsIGNodW5rcyk7CiAgICByZXR1cm4gY2h1bmtzLmpvaW4oJ1xuJyk7CiAgfQoKICBtb2R1bGUuZXhwb3J0cyA9IHsgZ2V0RW1haWxDb250ZW50IH07Cg==
+const { google } = require('googleapis');
+
+// Gmail messages are usually nested multipart (e.g. multipart/mixed
+// containing multipart/alternative containing text/plain + text/html).
+// The old code only looked at top-level parts, so the text/html part was
+// missed whenever it was nested one level down, and the bot extracted no
+// link at all. Walk the whole MIME tree instead.
+function collectHtmlParts(part, out) {
+  if (part.mimeType === 'text/html' && part.body && part.body.data) {
+    out.push(Buffer.from(part.body.data, 'base64').toString('utf8'));
+  }
+  if (Array.isArray(part.parts)) {
+    for (const sub of part.parts) collectHtmlParts(sub, out);
+  }
+}
+
+async function getEmailContent(auth, messageId) {
+    const gmail = google.gmail({ version: 'v1', auth });
+    const res = await gmail.users.messages.get({
+      userId: 'me',
+      id: messageId,
+      format: 'full',
+    });
+    const chunks = [];
+    collectHtmlParts(res.data.payload, chunks);
+    return chunks.join('\n');
+  }
+
+  module.exports = { getEmailContent };
